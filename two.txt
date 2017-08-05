@@ -1,0 +1,675 @@
+<?php
+header('content-type:text/html; charset=utf-8');
+
+declare(strict_types=1);
+
+$fun = 'test';
+$a = 'a';
+$b = 'b';
+/*
+class A{
+
+ private $a = 1;
+
+}
+
+$getValue = funciton() {
+    return $this->a;
+};
+
+$fun = $getValue->bindTo(new A, 'A');*/
+
+var_dump($fun);
+
+print_r(get_defined_vars());
+/*$a = <<<STR
+<h1> 朱孝远 </h1>
+
+STR;
+echo $a;
+
+$str = '123v4a5';
+var_dump($str);
+
+var_dump($str - 0);*/
+/*echo $_SERVER['PHP_SELF'];
+echo $_SERVER['HTTP_HOST'];*/
+// print_r($_SERVER);
+
+
+//$path = 'http://www.zhuxiaoyuan.cn/home/index.php?id=1';
+//$parsearray = parse_url($path);
+//print_r($parsearray);
+//$pathinfo = pathinfo($parsearray['path']);
+//echo $pathinfo['extension'];
+/*function fun1($path){
+    $a = strrpos($path,'.');  //返回.出现的位置。
+    return substr($path, $a+1); // 返回去掉.的后缀名。
+}
+
+function fun2($path){
+    return ltrim(strrchr($path,'.'),'.');
+}
+
+function fun3($path){
+    $pathinfo = pathinfo($path);
+    return $pathinfo['extension'];
+}
+
+function fun4($path){
+    $filename = basename($path);
+    $namearray = explode( '.',$filename);
+    return array_pop($namearray);
+}
+
+function fun5($path){
+    $pattern = '/^[^\.]+\.([\w]+)$/';
+    return preg_replace($pattern, '${1}', basename($path));
+}
+
+echo fun1($path).'---'.fun2($path).'---'.fun3($path).'---'.fun4($path).'---'.fun5($path);*/
+
+//$filename = array_pop($path);
+//var_dump(explode('.',$filename)[1]);
+//
+//
+
+/* class a
+    {
+        protected $c;
+
+
+        public function __construct(){
+            $this->c = 100;
+        }
+        public function c()
+        {
+            echo 'a1234';
+            $this->c = 10;
+        }
+
+        public function c($a){
+            echo $a;
+        }
+    }
+
+    class b extends a
+    {   
+        public function print_data()
+        {
+            return $this->c;
+        }
+    }
+
+    $b = new b();
+    var_dump($b->print_data());*/
+
+// $a = [1,4,3,8];
+// $b = [4,3,6];
+// $c = $a+$b;
+// $c = array_merge($a,$b);
+// var_dump($c);
+//session_start();
+//var_dump(session_id());
+//header("HTTP/1.0 404 Not Found");
+// $arr = true;
+// echo (string)$arr.'123';
+//var_dump($_SERVER['HTTP_HOST']);
+//去当前时间戳
+/*echo time();
+echo "<hr/>";
+echo strtotime('-1 day');
+echo "<hr/>";
+echo date('Y-m-d h:i:s',time());
+echo '<hr/>';
+echo '服务器ID'.$_SERVER['SERVER_ADDR'].'客户端ID'.$_SERVER['REMOTE_ADDR'];
+echo "<hr/>";
+echo gethostbyname('www.baidu.com');
+echo '<hr/>';
+$date = date_create('2017-05-31');
+echo date_format($date, 'Y/m/d');
+//echo date_format(time(),'y-m-d h:i:s');
+$url = "http://www.phpddt.com/abc/de/fg.php?id=1";
+$arr = parse_url($url);
+var_dump($arr);
+
+echo mb_substr('这样一来就不会出现乱码了', 0, 2);
+echo '<hr/>';
+echo date('Y-m-d H:i:s', strtotime('-1 days'));
+echo '<hr/>';
+echo date('Y-m-d H:i:s',Time () -24*3600);
+echo "<hr/>";
+function maxnum($a, $b, $c){
+    return $a > $b ? max($a, $b):max($b, $c);
+}
+
+echo max(1, 2, 3);
+*/
+
+
+
+
+/*try{
+    $dns='mysql:dbname=xypblog;host=127.0.0.1';
+    $user='root';
+    $password='';
+    $pdo = new PDO($dns,$user,$password);
+
+}catch(PDOException $e){
+    echo $e->getMessage();
+}
+var_dump($pdo);*/
+
+
+/*$localhost = 'localhost';
+ $user = 'root';
+$password = '';
+
+$con = new mysqli($localhost, $user, $password);
+$con->select_db('xiewenting');
+$con->set_charset('utf8');
+
+$sql = 'insert into ting(name,age, sex, test) values(?,?,?,?)';
+$sysm = $con->prepare($sql);
+
+for($i = 1; $i < 1000; $i++){
+    $name = '朱孝远'.$i;
+    $sex = $i;
+    $age = '男'.$i;
+    $test = 'test'.$i;
+    $sysm->bind_param('siss', $name, $sex, $age, $test);
+    $sysm->execute();
+}
+echo '<hr/>';
+echo $con->insert_id;
+
+*/
+
+/**
+ * 遍历目录
+ * @param  [String] $path [目录路径]
+ * 
+ */
+
+
+/*function dirList($path){
+    if (is_dir($path)) {
+        $dir_handle = opendir($path);
+        while ($file = readdir($dir_handle)) {
+            $tmpPath = $path.'/'.$file;
+            if (is_dir($tmpPath) && $file != '.' && $file != '..') {
+                dirList($tmpPath);
+            }else{
+                if(is_file($tmpPath)){
+                    echo $tmpPath.'<br/>';
+                }
+            }
+
+        }
+    }
+
+    return;
+}*/
+
+/*$path = 'test';
+dirList($path);
+
+$p = 'test/tmp/a.txt';
+$arr = readfile($p);*/
+
+// $r = fopen($p,'r');
+// $str = fgets($r);
+// $ssd = fgetc($r);
+// file_put_contents($p,$p);
+// var_dump($str);
+// var_dump($ssd);
+
+
+
+
+
+
+//echo getenv('REMOTE_ADDR');
+/*for($i = 'a';$i<='z';$i++){
+    echo ord($i)."<Br>";
+    echo $i."<Br>";
+}*/
+//var_dump(function_exists('print_r'));
+
+/*$path = "abcd";
+
+$file = opendir($path);
+
+while($f = readdir($file)){
+     var_dump(is_dir($path.'/'.$f));
+    echo $f.":".filesize($path.'/'.$f).'</br>';
+}*/
+
+
+
+/*
+class Person{
+
+    private $name;  //名称
+    protected $sex; //性别
+    private $age;//年龄
+
+    //声明一个构造方法，在创建对象时为成员属性赋初值。
+    function __construct($name = "无名",$sex = "保密",$age = 1){
+        $this->name = $name;
+        $this->sex = $sex;
+        $this->age = $age;
+    }
+
+    function __clone(){
+
+    }
+
+    //在类的外部直接为成员属性赋值时，自动调用。
+    public function __set($name, $value){
+        if($name == "age"){
+            if($value > 28 || $value < 17){
+                echo "年龄在17 - 26 之间";
+                return;
+            }
+        }
+       $this->$name = $value;
+    }
+
+    //在类的外部直接获取成员属性时，自动调用。
+    public function __get($name){
+        if($name == "age"){
+            return $this->$name + 2;
+        }
+        return $this->$name;
+    }
+
+    //在类的外部使用isset()方法测试成员属性时，自动调用。
+    function __isset($name){
+        return isset($this->$name);
+    }
+
+    //在类的外部使用unset()方法测试成员属性时，自动调用。
+    function __unset($name){
+        unset($this->$name);
+    }
+
+    function say(){
+        echo $this->name."说";
+    }
+
+    function eat(){
+        echo $this->name."吃";
+    }
+
+}
+
+$p1 = new Person("张三","男",17);
+$p1->age = 14; //年龄在17 - 26 之间
+$p2 = clone $p1;
+echo $p2->name;
+var_dump(isset($p1->mail)); //bool(false)*/
+
+/*
+ * 运行结果为：
+ * 张三说
+ * 王五去世
+ * 李四去世
+ * 张三去世
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+echo strtotime('now').'<br/>';
+echo strtotime('-1 day').'<br/>';
+echo strtotime('-1 week').'<br/>';
+echo date('Y-m-l h:i:s',strtotime('-1 day')).'<br/>';
+echo strrev('zhuxiaoyuan');*/
+
+//echo file_put_contents("https://www.nuomi.com/?cid=002540");
+
+//echo "aaa ","bbb ","ccc "; //aaa bbb ccc
+//echo("aaa");    //aaa
+//echo("aaa","bbb");//会报错，不可以传递多个参数。
+//
+//print "aaa"; //aaa
+//$a = print("aaa"); //$a = 1
+//
+//$str = "aaa";
+//$b = print_r($str); //打印输出 ，并返回1.
+//echo $b; // 1
+//
+//$b = print_r($str,true); //不打印输出，将$str作为返回值。
+//echo $b; // aaa
+//
+//printf("My name is %s %s","朱","孝远"); //My name is 朱 孝远
+//
+//在s前添加1\$或2\$...表示后面的参数显示的位置
+//printf("My name is %s %1\$s","朱","孝远");  //My name is 朱 朱
+//
+//sprintf("My name is %s %s","朱","孝远"); //没有任何输出
+//$c = sprintf("My name is %s %s","朱","孝远");
+//echo $c;    //My name is 朱 孝远
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*$ch = curl_init();
+// set URL and other appropriate options
+curl_setopt($ch, CURLOPT_URL, "http://www.baidu.com/");
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+// grab URL, and print
+curl_exec($ch);*/
+/*$name = ['朱','孝','远'];
+
+$serialize_name = serialize($name);
+
+var_dump($serialize_name); //string(48) "a:3:{i:0;s:3:"朱";i:1;s:3:"孝";i:2;s:3:"远";}"
+
+$unserializename = unserialize($serialize_name);
+
+var_dump($unserializename); //array(3) { [0]=> string(3) "朱" [1]=> string(3) "孝" [2]=> string(3) "远" }
+*/
+/*
+class person {
+    public $name;
+    var $age;
+    var $sex;
+
+    function __construct($name = "无名氏",$age = null,$sex = null){
+        $this->name = $name;
+        $this->age = $age;
+        $this->sex = $sex;
+    }
+
+    final function  show_info(){
+        echo 'name：'.$this->name.',age: '.$this->age.',sex: '.$this->sex.'<br/>';
+    }
+}
+
+$person = new person('朱孝远',21,'男');
+
+var_dump($person); //object(person)#1 (3) { ["name"]=> string(9) "朱孝远" ["age"]=> int(21) ["sex"]=> string(3) "男" }
+
+$person->show_info(); // name：朱孝远,age: 21,sex: 男
+
+$str = serialize($person);
+
+var_dump($str);  //string(79) "O:6:"person":3:{s:4:"name";s:9:"朱孝远";s:3:"age";i:21;s:3:"sex";s:3:"男";}"
+
+$p = unserialize($str);
+
+$p->show_info();  // name：朱孝远,age: 21,sex: 男*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+//我们通常有一些多维数组需要排序：
+
+//$guys = array(
+//    array('name'=>'jake', 'score'=>80, 'grade' =>'A'),
+//    array('name'=>'jina', 'score'=>70, 'grade'=>'A'),
+//    array('name'=>'john', 'score'=>70, 'grade' =>'A'),
+//    array('name'=>'ben', 'score'=>20, 'grade'=>'B')
+//);
+//例如我们想按成绩倒序排列，如果成绩相同就按名字的升序排列。
+//这时我们就需要根据$guys的顺序多弄两个数组出来：
+//$scores = array(80,70,70,20);
+//$names = array('jake','jina','john','ben');
+//然后
+/*array_multisort($scores, SORT_DESC, $names, $guys);
+
+foreach($guys as $v){
+    print_r($v);
+    echo "<br/>";
+}*/
+/*
+Array ( [name] => jake [score] => 80 [grade] => A )
+Array ( [name] => jina [score] => 70 [grade] => A )
+Array ( [name] => john [score] => 70 [grade] => A )
+Array ( [name] => ben [score] => 20 [grade] => B )
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*$array1 = array('one'=>'C','two'=>'A','three'=>'B','four'=>'F','5'=>'D');
+$array2 = array('one'=>'1',2=>'2','thee'=>'3','fore'=>'7');
+$array3 = array($array1,$array2);
+
+//$array1 = array('one'=>'C','two'=>'A','thee'=>'B','four'=>'F','5'=>'D');
+
+$array1 = array('one'=>'10','two'=>'20','three'=>'20','four'=>10);
+$array2 = array('one'=>'10','two'=>'30','three'=>'20','four'=>'1');
+$array3 = array($array1,$array2);
+$a = ['20','30'];
+$b = ['10','1'];
+array_multisort($a,SORT_DESC,$b,SORT_ASC,$array3);
+
+print_r($array3);//Array ( [three] => B [two] => A [four] => F [one] => C )
+
+
+echo "<br/>";*/
+/*array_multisort($array1,$array2,$array3);
+print_r($array1);//Array ( [four] => 10 [one] => 10 [three] => 20 [two] => 20 )
+print_r($array2);//Array ( [four] => 1 [one] => 10 [three] => 20 [two] => 30 )
+print_r($array3);//Array ( [four] => F [one] => C [three] => B [two] => A )*/
+
+
+
+//print_r(range(0,5));
+//Array ([0]=>0 [1]=>1 [2]=>2 [3]=>3 [4] => 4 [5] => 5)
+
+
+/*print_r(array_slice($array1,1,2));//Array ( [two] => 20 [three] => 30 )
+$array1 = array('10','20','30',10);
+print_r(array_slice($array1,1,2));// Array ( [0] => 20 [1] => 30 )
+print_r(array_slice($array1,1,2,true));// Array ( [1] => 20 [2] => 30 )*/
+
+
+//var_dump(array_flip($array1)); //array(3) { [10]=> string(3) "one" [20]=> string(3) "two" [30]=> string(5) "three" }
+
+
+//print_r(array_keys($array1)); //Array ( [0] => one [1] => two [2] => three [3] => four)
+//print_r(array_keys($array1, '10')); //Array ([0] => one [1] => four)
+//print_r(array_keys($array1,'10',true)); //Array ( [0] => four)
+
+/*   PHP 常用排序函数
+ *   sort()--以升序对数组排序
+ *   rsort()--以降序对数组排序
+ *   asort()--根据值，已升序对关联数组进行排序。
+ *   ksort()--根据键，已升序对关联数组进行排序。
+ *   arsort()--根据值，以降序对关联数组进行排序。
+ *   krsort()--根据键，以降序对关联数组进行排序。
+ *   usort()--将用用户自定义的比较函数对一个数组中的值进行排序。
+ *   uasort()--使用用户自定义的比较函数对数组中的值进行排序并保持索引关联
+ *   array_multisort--对多个数组或多维数组进行排序。
+ */
+
+
+
+/*$array1 = array([1,2,3],[4,5,6,7],[8,9,10,11,12]);
+
+function cm($n , $m){
+    if(count($n) == count($m)){
+        return 0;
+    }else{
+        count($n) > count($m) ? 1 : -1;
+    }
+}
+
+usort($array1,'cm');
+
+foreach($array1 as  $v){
+    print_r($v);
+    echo '<br/>';
+}*/
+/*
+Array ( [0] => 8 [1] => 9 [2] => 10 [3] => 11 [4] => 12 )
+Array ( [0] => 4 [1] => 5 [2] => 6 [3] => 7 )
+Array ( [0] => 1 [1] => 2 [2] => 3 )
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*//使用for语句去遍历非连续数字索引会报错。
+for($i = 0; $i < count($array1);$i++){
+    echo $array1[$i];
+}
+echo '<br/>';
+foreach($array1 as $v){
+    echo $v." ";    //1 2 3 4 5
+}
+echo '<br/>';
+foreach($array1 as $k=>$v){
+    echo $k."=>".$v.',';    //one=>1,two=>2,thee=>3,fore=>4,5=>5,
+}*/
+
+
+
+
+
+
+
+
+
+
+//array_change_key_case()函数 是将键值转换为全大写或小写。
+/*$new_arr = array_change_key_case($array1, CASE_UPPER);
+
+var_dump(array_column([$array1],'two'));
+echo "<br/>";
+var_dump(array_keys($array1));
+echo "<br/>";
+var_dump(array_key_exists('one',$array1));
+echo "<br/>";
+var_dump(array_diff_assoc($array1,$array2));
+echo "<br/>";
+var_dump(array_diff($array1,$array2));
+echo "<br/>";
+$cba = function ($n){
+    return $n*$n;
+};
+var_dump(array_map($cba,$array1));*/
+
+
+
+/*$srart = microtime(true);
+ini_set('display_errors',false);
+$array1 = ['foo'=>111];
+for($i = 0;$i<1000000;$i++){
+    $foo = $array1[foo];
+}
+$end = microtime(true);
+echo $end-$srart;*/
+
+
+
+
+/* //PHP查看变量类型的函数。
+ $str = "string";
+ echo gettype($str); // 输出string。
+ var_dump($num);     // 输出int(22)。
+
+ //PHP检测变量类型常用的函数。
+ is_array();         // 判断是否是数组，返回值为true和false。
+ is_bool();          // 判断变量类型是否是布尔型，返回值为true和false。
+ is_float();         // 判断是否是浮点类型，返回值为true和dalse
+ is_double();        // 判断变量类型是否为倍浮点数类型，返回值为true或者false。
+ is_integer();       // 此函数是is_int()的别名函数，判断变量是否是数字，返回值为true或是false
+ is_null();          // 判断变量是否为null，返回值为true或是false
+ is_numeric();       // 判断变量是否是数字或数字字符串（如表单输入，它们通常为字符串）。
+ is_object();        // 判断变量是否是
+ is_resource();      // 判断变量是否是资源类型
+ is_scalar();        // 检测变量是否是一个标量，返回值为true或者false。
+ is_string();        // 检测变量是否是字符串，返回值为true或者false。*/
+
+
+
+
